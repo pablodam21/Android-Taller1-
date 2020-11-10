@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contraitLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number_of_elements"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonDecrease"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_elements"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDecrease2Elements"
+        app:layout_constraintStart_toStartOf="@+id/buttonDecrease2Elements"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDecrease2Elements" />
+
+    <Button
+
+        android:id="@+id/buttonDecrease2Elements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decrease_two_element"
+
+        app:layout_constraintBottom_toTopOf="@+id/buttonReset"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDecrease"
+        app:layout_constraintStart_toStartOf="@+id/buttonDecrease"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDecrease" />
+
+    <Button
+        android:id="@+id/buttonIncrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/increase_one_element"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDecrease"
+        app:layout_constraintEnd_toEndOf="@+id/buttonIncrease2Elements"
+        app:layout_constraintStart_toStartOf="@+id/buttonIncrease2Elements"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIncrease2Elements" />
+
+    <Button
+        android:id="@+id/buttonDecrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decrease_one_element"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDecrease2Elements"
+        app:layout_constraintEnd_toEndOf="@+id/buttonIncrease"
+        app:layout_constraintStart_toStartOf="@+id/buttonIncrease"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIncrease" />
+
+    <Button
+        android:id="@+id/buttonIncrease2Elements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/increase_two_element"
+        app:layout_constraintBottom_toTopOf="@+id/buttonIncrease"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

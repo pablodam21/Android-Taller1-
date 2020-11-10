@@ -1,0 +1,5 @@
+include ':app fase 3'
+include ':app fase 2'
+include ':app fase 1'
+include ':app'
+rootProject.name = "U3T1InitialApp"
